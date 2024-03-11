@@ -8,9 +8,7 @@ function App() {
         <div className="wrapper">
             <Header/>
                 <main className="main">
-                    <BrowserRouter>
-                        MAIN
-                    </BrowserRouter>
+                   MAIN
                 </main>
             <Footer/>
         </div>

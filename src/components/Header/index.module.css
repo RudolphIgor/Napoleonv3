@@ -1,0 +1,85 @@
+header {
+    margin: 20px 0 35px 0;
+}
+
+.header__container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr auto;
+    row-gap: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 32px 32px 32px;
+    grid-column-gap: 10px;
+    align-self: center;
+    text-align: start;
+}
+
+.contacts {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: grid;
+    grid-column-gap: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: center;
+    text-align: end;
+}
+
+nav {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 5;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 3px;
+
+
+}
+
+.nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 43px;
+    padding-bottom: 5px;
+}
+
+.nav__item {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.nav__item:hover {
+    color: #E30016;
+    border-bottom: 2px solid #E30016;
+}
+
+.social {
+    fill: #fff;
+}
+
+.social:hover {
+    fill: #E30016;
+}
+
+.phone:hover {
+    color: #E30016;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+
+
