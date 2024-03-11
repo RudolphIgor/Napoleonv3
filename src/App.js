@@ -7,9 +7,11 @@ function App() {
     return (
         <div className="wrapper">
             <Header/>
-            <BrowserRouter>
-
-            </BrowserRouter>
+            {/*<BrowserRouter>*/}
+                <main className="main">
+                    MAIN sdfsadfsad
+                </main>
+            {/*</BrowserRouter>*/}
             <Footer/>
         </div>
     );
