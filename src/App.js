@@ -5,11 +5,14 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <div className={"wrapper" + " " +"container"}>
+        <div className={"wrapper" + " " + "container"}>
             <Header/>
-                <main className="main">
-                   MAIN
-                </main>
+            <main className="main">
+                <Routes>
+                    <Route path="" element={<Header/>}/>
+                    <Route path="footer" element={<Footer/>}/>
+                </Routes>
+            </main>
             <Footer/>
         </div>
     );
