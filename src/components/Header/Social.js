@@ -11,7 +11,6 @@ const Social = () => {
             <Link to="#" target="_blank" rel="noopener noreferrer">
                 <ImgWhatsapp className={style.social} alt='whatsapp'/>
             </Link>
-
             <Link to={'#'} rel="nofollow noopener noreferrer" target="_blank">
                 <ImgInstagram className={style.social} alt='instagram'/>
             </Link>

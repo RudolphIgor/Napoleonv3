@@ -42,7 +42,6 @@ const Index = () => {
             <Logo className={style.logo} />
             <Contacts/>
             <Nav title={menuItems}/>
-
         </header>
     );
 };
