@@ -8,9 +8,8 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr auto;
     row-gap: 30px;
-    max-width: 1220px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 .social {
