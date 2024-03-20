@@ -8,14 +8,14 @@ import style from './index.module.css'
 const Social = () => {
     return (
         <div className={style.social}>
-            <Link to="#" target="_blank" rel="noopener noreferrer">
-                <ImgWhatsapp className={style.social} alt='whatsapp'/>
+            <Link to="#" target="_blank" rel="noopener noreferrer" >
+                <ImgWhatsapp className={style.slink} alt='whatsapp'/>
             </Link>
             <Link to={'#'} rel="nofollow noopener noreferrer" target="_blank">
-                <ImgInstagram className={style.social} alt='instagram'/>
+                <ImgInstagram className={style.slink} alt='instagram'/>
             </Link>
             <Link to={"#"} rel="nofollow noopener noreferrer" target="_blank">
-                <ImgTelegram className={style.social} alt='telegram'/>
+                <ImgTelegram className={style.slink} alt='telegram'/>
             </Link>
         </div>
     );
