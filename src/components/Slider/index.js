@@ -1,12 +1,11 @@
 import React from 'react';
-import style from './slider.module.css'
-import {sliderArray} from "../../data/sliderArray";
-
+import style from './index.module.css'
 
 const Index = (props) => {
     const styleblock = {
         background: `url(${props.slideArray.img}) center no-repeat`,
-        height: '498px',
+        height: "clamp(141px, 41.5vw, 498px)",
+
     }
     console.log(props)
     return (

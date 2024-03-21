@@ -6,6 +6,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay'
 import Slider from "../Slider";
 import {sliderArray} from "../../data/sliderArray";
+import style from "./index.module.css"
 
 const Index = () => {
     return (
