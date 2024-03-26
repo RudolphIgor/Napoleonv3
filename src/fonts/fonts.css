@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('Ubuntu-Regular.ttf') format('truetype');
@@ -35,7 +36,7 @@
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url('./Montserrat-Regular.ttf') format('truetype');
+    src: url('Montserrat-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face {

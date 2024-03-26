@@ -7,7 +7,6 @@ const Index = (props) => {
         height: "clamp(141px, 41.5vw, 498px)",
 
     }
-    console.log(props)
     return (
         <div style={styleblock}>
             <div className={style.content}>

@@ -6,11 +6,11 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay'
 import Slider from "../Slider";
 import {sliderArray} from "../../data/sliderArray";
-import style from "./index.module.css"
+import clsx from "clsx";
 
 const Index = () => {
     return (
-        <div>
+        <div className={clsx('section')}>
             <Swiper
                 modules={[Autoplay, EffectFade]}
                 effect="fade"
