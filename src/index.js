@@ -6,6 +6,8 @@ import './index.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { register } from 'swiper/element/bundle';
+register();
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

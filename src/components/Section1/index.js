@@ -11,32 +11,16 @@ import clsx from "clsx";
 const Index = () => {
     return (
         <section className={clsx('section')}>
-            <Swiper
-                modules={[Autoplay, EffectFade]}
-                effect="fade"
-                // autoplay={{
-                //     delay: 1000,
-                //     disableOnInteraction: false
-                // }}
-                spaceBetween={50}
-                slidesPerView={1}
-                pagination={{clickable: true}}
-                scrollbar={{draggable: true}}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
-            >
-                {
-                    sliderArray.map(item => {
-                        return (
-                            <SwiperSlide key={item.id}>
-                                <Slider slideArray={item}/>
-                            </SwiperSlide>
-                        )
-                    })
-
+            <swiper-container slides-per-view="1">
+                {sliderArray.map(item => {
+                    return (
+                        <swiper-slide key={item.id}>
+                            <Slider slideArray={item}/>
+                        </swiper-slide>
+                    )
+                })
                 }
-            </Swiper>
-
+            </swiper-container>
         </section>
     );
 };

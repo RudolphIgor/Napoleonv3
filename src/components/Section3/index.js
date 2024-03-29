@@ -10,8 +10,8 @@ const Index = () => {
             </h2>
             <div className={clsx(style.wrapper)}>
                 <div className={clsx(style.aboutImage)}>
-                    <img className={clsx(style.image)} src="./img/about.jpg"/>
-                    <img className={clsx(style.imageMobile)} src="./img/aboutMobile.jpg"/>
+                    <img className={clsx(style.image)} src="./img/about.jpg" alt="aboutphoto"/>
+                    <img className={clsx(style.imageMobile)} src="./img/aboutMobile.jpg" alt="aboutphoto"/>
                 </div>
                 <div className={clsx(style.textFirst)}>
                     <p>
