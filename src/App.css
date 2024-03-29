@@ -22,6 +22,6 @@
     }
     .sectionTitle {
         font-size: clamp(20px, 2.5vw, 30px);
-        margin-bottom: clamp(30px, 4.1666666667vw, 50px);
+        margin-bottom: clamp(15px, 4.1666666667vw, 50px);
     }
 }

@@ -7,7 +7,7 @@ import CatalogCard from "../CatalogCard";
 
 const Index = () => {
     return (
-        <div className={clsx('container')}>
+        <section className={clsx('container', 'section')}>
             <h2 className={clsx('sectionTitle')}>
                 каталог
             </h2>
@@ -43,7 +43,7 @@ const Index = () => {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

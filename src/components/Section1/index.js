@@ -10,7 +10,7 @@ import clsx from "clsx";
 
 const Index = () => {
     return (
-        <div className={clsx('section')}>
+        <section className={clsx('section')}>
             <Swiper
                 modules={[Autoplay, EffectFade]}
                 effect="fade"
@@ -37,7 +37,7 @@ const Index = () => {
                 }
             </Swiper>
 
-        </div>
+        </section>
     );
 };
 

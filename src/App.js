@@ -8,7 +8,7 @@ import './fonts/fonts.css'
 function App() {
     return (
         <div className={"wrapper"}>
-            <Header/>
+            {/*<Header/>*/}
             <main className="main">
                 <Routes>
                     <Route path="" element={<Home/>}/>
