@@ -3,7 +3,7 @@ import {Autoplay, EffectFade} from 'swiper/modules';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import 'swiper/css/autoplay'
+import 'swiper/element/css/autoplay'
 import Slider from "../Slider";
 import {sliderArray} from "../../data/sliderArray";
 import clsx from "clsx";
@@ -11,7 +11,13 @@ import clsx from "clsx";
 const Index = () => {
     return (
         <section className={clsx('section')}>
-            <swiper-container slides-per-view="1">
+            <swiper-container
+                slides-per-view="1"
+                autoplay="true"
+                speed="2000"
+                loop="true"
+                // space-between="30"
+            >
                 {sliderArray.map(item => {
                     return (
                         <swiper-slide key={item.id}>

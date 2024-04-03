@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    width: min(96%, 1200px);
+    width: min(90%, 1200px);
 }
 
 .section {
@@ -25,3 +25,5 @@
         margin-bottom: clamp(15px, 4.1666666667vw, 50px);
     }
 }
+
+
