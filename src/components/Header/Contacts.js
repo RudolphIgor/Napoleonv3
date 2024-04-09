@@ -5,8 +5,8 @@ import style from './index.module.css'
 const Contacts = () => {
     return (
         <div className={style.contacts}>
-            <Link className={style.phone} to={'tel:+79233544455'}> +7 923 354 44 55 </Link>
-            <span>г. Абакан, ул. Пушкина 116</span>
+            <Link className={style.phone} to={'tel:+79135444363'}> +7 913 544 43 63 </Link>
+            <span>г. Абакан, ул. Пушкина 216п</span>
         </div>
     );
 };

@@ -5,12 +5,16 @@ import Social from "./Social";
 import Contacts from "./Contacts";
 import Nav from "./Nav";
 import {menuItems} from "../../data/menuItems"
+import clsx from "clsx";
 
 
 const Index = () => {
         return (
         <header className={style.header__container}>
-            <Social/>
+            <div className={clsx(style.socialWrapper)}>
+                <Social/>
+            </div>
+
             <Logo className={style.logo} />
             <Contacts/>
             <Nav title={menuItems}/>
