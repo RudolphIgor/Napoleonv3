@@ -6,6 +6,7 @@ import Contacts from "./Contacts";
 import Nav from "./Nav";
 import {menuItems} from "../../data/menuItems"
 import clsx from "clsx";
+import NavMobile from "../NavMobile";
 
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
             <Logo className={style.logo} />
             <Contacts/>
             <Nav title={menuItems}/>
+            <NavMobile/>
         </header>
     );
 };
