@@ -7,7 +7,7 @@ import CatalogCard from "../CatalogCard";
 
 const Index = () => {
     return (
-        <section className={clsx('container', 'section')}>
+        <section className={clsx('container', 'section')} id="section2">
             <h2 className={clsx('sectionTitle')}>
                 каталог
             </h2>

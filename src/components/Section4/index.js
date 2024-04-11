@@ -95,7 +95,7 @@ const Index = () => {
         swiperRef.current.initialize();
     }, []);
     return (
-        <section className={clsx('container', 'section')}>
+        <section className={clsx('container', 'section')} id="section4">
             <h2 className={clsx('sectionTitle')}>
                 акции
             </h2>

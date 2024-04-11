@@ -11,9 +11,17 @@ const Nav = (props) => {
             <ul className={style.nav__list}>
                 {
                     props.title.map(items =>
-                        <NavLink key={items.id} to={items.route}>
+                        <Link
+                            activeClass="active"
+                            key={items.id}
+                            to={items.route}
+                            spy={true}
+                            smooth={true}
+                            offset={-20}
+                            duration={500}
+                            >
                             <li className={style.nav__item} >{items.title}</li>
-                        </NavLink>
+                        </Link>
                     )
                 }
             </ul>

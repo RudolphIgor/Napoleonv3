@@ -4,7 +4,7 @@ import style from './index.module.css'
 
 const Index = () => {
     return (
-        <section className={clsx('container', 'section')}>
+        <section className={clsx('container', 'section')} id="section3">
             <h2 className={clsx('sectionTitle')}>
                 О нас
             </h2>

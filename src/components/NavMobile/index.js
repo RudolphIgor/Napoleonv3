@@ -6,6 +6,7 @@ import clsx from "clsx";
 import {AnimatePresence, motion} from "framer-motion";
 import {NavLink} from "react-router-dom";
 import {menuItems} from "../../data/menuItems"
+import {Link} from "react-scroll";
 
 const Index = () => {
     const [isOpen, setOpen] = useState(false);
@@ -25,11 +26,28 @@ const Index = () => {
                         <ul className={style.nav__list}>
                             {
                                 menuItems.map(items =>
-                                    <NavLink className={style.nav__item} key={items.id} to={items.route}>
+                                    <Link
+                                        className={style.nav__item}
+                                        key={items.id}
+                                        to={items.route}
+                                        offset={-25}
+                                        duration={500}
+
+                                    >
                                         <motion.li
+                                            onClick={() => {
+                                                setOpen()
+                                            }
+                                            }
+                                            // activeClass="active"
+                                            key={items.id}
+                                            to={items.route}
+                                            // spy={true}
+                                            // smooth={true}
+
                                             className={clsx(style.nav_list)}
-                                            initial={{ scale: 0, opacity: 0 }}
-                                            animate={{ scale: 1, opacity: 1 }}
+                                            initial={{scale: 0, opacity: 0}}
+                                            animate={{scale: 1, opacity: 1}}
                                             transition={{
                                                 type: "spring",
                                                 stiffness: 260,
@@ -39,7 +57,7 @@ const Index = () => {
                                         >
                                             {items.title}
                                         </motion.li>
-                                    </NavLink>
+                                    </Link>
                                 )
                             }
                         </ul>

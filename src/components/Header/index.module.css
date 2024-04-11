@@ -21,22 +21,15 @@ header {
 
 .social {
     display: grid;
-    grid-template-columns: 32px 32px 32px;
-    grid-column-gap: 10px;
-    /*justify-content: center;*/
-    /*width: 100%;*/
-    /*margin: 0 auto;*/
-    /*border: 1px solid green;*/
-    /*align-self: center;*/
-    /*text-align: start;*/
-    /*max-width: 116px;*/
-    /*margin-right: auto;*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: min(10px, 0.8333333333vw)
+
 }
 
 .socialWrapper {
     display: grid;
-    grid-template-columns: 32px 32px 32px;
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: min(5px, 0.8333333333vw);
     align-self: center;
     text-align: start;
     max-width: 116px;
@@ -93,7 +86,7 @@ nav {
 
 .slink {
     fill: #fff;
-    width: 32px;
+    width: max(2.6666666667vw, 32px);
 }
 
 .social:hover {
@@ -119,20 +112,18 @@ nav {
     }
 
     .logo {
-        width: clamp(111px, 29vw, 348px);
+        width: clamp(150px, 29vw, 348px);
     }
 
-    .slink {
-        width: clamp(15px, 2.6666vw, 32px);
-    }
+
     .nav__item {
         font-size: clamp(14px, 1.5vw, 18px);
     }
 }
 @media (max-width: 1050px) {
-    .slink {
-        width: 32px;
-    }
+    /*.slink {*/
+    /*    width: 32px;*/
+    /*}*/
 }
 
 
@@ -143,5 +134,10 @@ nav {
     .contacts{
         display: none;
     }
-
+    .slink {
+        width: clamp(20px, 3.2258064516vw, 32px);
+    }
+    .header__container {
+        row-gap: 0px;
+    }
 }

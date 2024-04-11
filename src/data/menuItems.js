@@ -2,26 +2,26 @@ export const menuItems = [
     {
         id: 1,
         title: "Главная",
-        route: '/'
+        route: 'section1'
     },
     {
         id: 2,
         title: "Каталог",
-        route: '/'
+        route: 'section2'
     },
     {
         id: 3,
         title: "О нас",
-        route: '/'
+        route: 'section3'
     },
     {
         id: 4,
         title: "Акции",
-        route: '/'
+        route: 'section4'
     },
     {
         id: 5,
         title: "Отзывы",
-        route: '/'
+        route: 'section5'
     }
 ]

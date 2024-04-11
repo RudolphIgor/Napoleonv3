@@ -10,7 +10,7 @@ import clsx from "clsx";
 
 const Index = () => {
     return (
-        <section className={clsx('section')}>
+        <section className={clsx('section')} id="section1">
             <swiper-container
                 slides-per-view="1"
                 autoplay="true"

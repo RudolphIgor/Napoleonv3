@@ -59,7 +59,7 @@ const Index = () => {
         swiperFeedRef.current.initialize();
     }, []);
     return (
-        <section className={clsx('container', 'section')}>
+        <section className={clsx('container', 'section')} id="section5">
             <h2 className={clsx('sectionTitle')}>
                 отзывы
             </h2>
