@@ -21,7 +21,6 @@ const Index = () => {
                     <div className={clsx(style.logoWripper)}>
                         <Logo className={clsx(style.log)} />
                         <div className={clsx(style.social)}>
-
                             <Social />
                         </div>
 
@@ -55,8 +54,8 @@ const Index = () => {
                     <span className={clsx(style.title)}>
                             E-mail:
                     </span>
-                        <Link className={clsx(style.mail)} to={'mailto:napoleon@mail.ru'}>
-                            napoleon@mail.ru
+                        <Link className={clsx(style.mail)} to={'mailto:abakan_napoleon@mail.ru'}>
+                            abakan_napoleon@mail.ru
                         </Link>
                     </div>
                 </div>
