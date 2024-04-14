@@ -1,0 +1,25 @@
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: min(10px, 0.8333333333vw)
+}
+.slink {
+    fill: #fff;
+    width: max(2.6666666667vw, 32px);
+}
+
+.social:hover {
+    fill: #E30016;
+}
+
+@media (max-width: 600px)
+{
+    .social {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: min(1.6666666667vw, 10px)
+    }
+    .slink {
+        width: min(5.3333333333vw, 32px);
+    }
+}

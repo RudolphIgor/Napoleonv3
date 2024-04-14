@@ -19,12 +19,7 @@ header {
 }
 
 
-.social {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: min(10px, 0.8333333333vw)
 
-}
 
 .socialWrapper {
     display: grid;
@@ -84,14 +79,7 @@ nav {
 
 
 
-.slink {
-    fill: #fff;
-    width: max(2.6666666667vw, 32px);
-}
 
-.social:hover {
-    fill: #E30016;
-}
 
 .phone:hover {
     color: #E30016;
