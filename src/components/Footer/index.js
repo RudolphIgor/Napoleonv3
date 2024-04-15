@@ -2,9 +2,11 @@ import React from 'react';
 import clsx from "clsx";
 import style from './index.module.css'
 import {ReactComponent as Logo} from '../../img/logo.svg'
-import Social from "../Header/Social";
+
 import {YMaps, Map, Placemark} from '@pbe/react-yandex-maps';
 import {Link} from "react-router-dom";
+
+import SocialFooter from "../SocialFooter";
 
 
 const Index = () => {
@@ -21,7 +23,7 @@ const Index = () => {
                     <div className={clsx(style.logoWripper)}>
                         <Logo className={clsx(style.log)} />
                         <div className={clsx(style.social)}>
-                            <Social />
+                            <SocialFooter/>
                         </div>
 
                     </div>

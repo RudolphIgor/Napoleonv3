@@ -22,13 +22,11 @@ header {
 
 
 .socialWrapper {
+    border: 1px solid red;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: min(5px, 0.8333333333vw);
     align-self: center;
     text-align: start;
-    max-width: 116px;
-    /*margin-right: auto;*/
+    width: min(9.6666666667vw, 116px);
 }
 
 .contacts {

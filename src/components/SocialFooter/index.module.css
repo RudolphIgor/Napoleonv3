@@ -19,12 +19,12 @@
 
 @media (max-width: 800px) {
     .social {
-        width: min(14.5vw, 116px);
+        /*width: min(14.5vw, 116px);*/
     }
 }
 
 @media (max-width: 600px) {
     .social {
-        width: min(16vw, 80px);
+        /*width: min(16vw, 80px);*/
     }
 }
