@@ -1,8 +1,9 @@
 import React, {useEffect, useRef} from 'react';
 import clsx from "clsx";
-import style from "../Section4/insex.module.css";
+import style from "./index.module.css";
 import {register} from "swiper/element";
 import FeedBack from "../FeedBack";
+import {feedback} from "../../data/feedback";
 
 
 const Index = () => {
@@ -68,19 +69,18 @@ const Index = () => {
                    speed="2000"
                     loop="true"
                 >
-                    <swiper-slide>
-                        <FeedBack/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <FeedBack/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <FeedBack/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <FeedBack/>
-                    </swiper-slide>
+                    {
+                        feedback.map(feedBackItem => {
+                            console.log("Hi")
+                            console.log(feedBackItem.text)
+                            return (
+                                <swiper-slide class={clsx(style.slide)} key={feedBackItem.id}>
+                                    <FeedBack  feedback={feedBackItem.text}/>
+                                </swiper-slide>
+                            )
 
+                        })
+                    }
                 </swiper-container>
             </div>
         </section>
