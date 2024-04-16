@@ -2,19 +2,19 @@ import React from 'react';
 import style from './index.module.css'
 import clsx from "clsx";
 
-const Index = () => {
+const Index = (props) => {
     return (
         <div className={clsx(style.cardBody)}>
-            <img className={clsx(style.image)} src="./img/promotions/gloryKansas2.jpg" alt="photo"/>
+            <img className={clsx(style.image)} src={props.promo.image} alt="photo"/>
             <div className={clsx(style.wrapper)}>
                 <h4 className={clsx(style.title)}>
-                    Акция на линолеум</h4>
+                    {props.promo.title}
+                </h4>
                 <span className={clsx(style.label)}>
-                01 ноября - 23 ноября
+                {props.promo.offer}
             </span>
                 <p className={clsx(style.text)}>
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
-                    стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    {props.promo.text}
                 </p>
             </div>
 

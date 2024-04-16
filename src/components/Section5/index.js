@@ -71,8 +71,7 @@ const Index = () => {
                 >
                     {
                         feedback.map(feedBackItem => {
-                            console.log("Hi")
-                            console.log(feedBackItem.text)
+
                             return (
                                 <swiper-slide class={clsx(style.slide)} key={feedBackItem.id}>
                                     <FeedBack  feedback={feedBackItem.text}/>

@@ -8,6 +8,8 @@ import 'swiper/css/autoplay'
 import Promotion from "../Promotion";
 import style from "./insex.module.css"
 import {register} from 'swiper/element/bundle'
+import {promotions} from "../../data/promotions";
+
 
 const Index = () => {
     const swiperRef = useRef(null);
@@ -109,21 +111,17 @@ const Index = () => {
 
                     // space-between="30"
                 >
-                    <swiper-slide>
-                        <Promotion/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <Promotion/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <Promotion/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <Promotion/>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <Promotion/>
-                    </swiper-slide>
+                    {
+                        promotions.map(promotionItem => {
+                            return (
+                                <swiper-slide key={promotionItem.id}>
+                                    <Promotion promo={promotionItem}/>
+                                </swiper-slide>
+                            )
+                        })
+                    }
+
+
                 </swiper-container>
             </div>
 
