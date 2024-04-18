@@ -8,13 +8,13 @@ const Index = () => {
     return (
 
         <div className={style.social}>
-            <Link to="#" target="_blank" rel="noopener noreferrer">
+            <Link to="https://wa.me/79135444363" target="_blank" rel="noopener noreferrer">
                 <ImgWhatsapp className={style.slink} alt='whatsapp'/>
             </Link>
-            <Link to={'#'} rel="nofollow noopener noreferrer" target="_blank">
+            <Link to={'https://www.instagram.com/pol_napoleon?igsh=MXdmaTU1MHdpbGFwNg=='} rel="nofollow noopener noreferrer" target="_blank">
                 <ImgInstagram className={style.slink} alt='instagram'/>
             </Link>
-            <Link to={"#"} rel="nofollow noopener noreferrer" target="_blank">
+            <Link to={"https://t.me/+79135444363"} rel="nofollow noopener noreferrer" target="_blank">
                 <ImgTelegram className={style.slink} alt='telegram'/>
             </Link>
         </div>
