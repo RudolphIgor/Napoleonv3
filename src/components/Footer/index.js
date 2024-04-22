@@ -7,6 +7,7 @@ import {YMaps, Map, Placemark} from '@pbe/react-yandex-maps';
 import {Link} from "react-router-dom";
 
 import SocialFooter from "../SocialFooter";
+import {contacts} from "../../data/contacts";
 
 
 const Index = () => {
@@ -43,20 +44,20 @@ const Index = () => {
                             Адрес:
                         </span>
                         <span className={clsx(style.subtitle)}>
-                            г. Абакан, ул. Пушкина, д. 216п
+                            {contacts.address}
                         </span>
                     </div>
                     <div>
                     <span className={clsx(style.title)}>
                             Телефон:
                     </span >
-                        <Link className={clsx(style.subtitle)} to={'tel:+79135444363'}> +7 903 326 36 366 </Link>
+                        <Link className={clsx(style.subtitle)} to={`tel:${contacts.phone_number}`}> {contacts.phone_text} </Link>
                     </div>
                     <div>
                     <span className={clsx(style.title)}>
                             E-mail:
                     </span>
-                        <Link className={clsx(style.mail)} to={'mailto:abakan_napoleon@mail.ru'}>
+                        <Link className={clsx(style.mail)} to={`mailto:${contacts.email}`}>
                             abakan_napoleon@mail.ru
                         </Link>
                     </div>
