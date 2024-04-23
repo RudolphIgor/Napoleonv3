@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import style from './index.module.css'
+import {ReactComponent as IconClose} from "../../img/iconClose.svg";
 import Modal from "../Modal";
 
 const Index = (props) => {
@@ -9,6 +10,7 @@ const Index = (props) => {
     }
     const [isOpen, setIsOpen] = useState(false);
     console.log(`isOpen: ${isOpen}`);
+
     return (
         <div style={styleblock}>
             <div className={style.content}>
@@ -19,7 +21,11 @@ const Index = (props) => {
                     {props.slideArray.text_btn}
                 </button>
                 {isOpen && (
-                    <Modal>
+                    <Modal
+                        closeIcon={<IconClose onClick={() => setIsOpen(false)}/>}
+                        closeBody={() => setIsOpen(false)}
+
+                    >
                         <p>Some Text</p>
                     </Modal>
                 )}

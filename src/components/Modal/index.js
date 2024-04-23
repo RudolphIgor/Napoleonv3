@@ -1,18 +1,23 @@
 import React from 'react';
-import {ReactComponent as IconClose} from "../../img/iconClose.svg";
 import ReactDOM from "react-dom";
 import style from './index.module.css';
 import clsx from "clsx";
 
 
-const Index = ({children}) => {
+const Index = ({children, closeIcon, closeBody}) => {
     return ReactDOM.createPortal(
-        <div className={clsx(style.modal)}>
-            <div className={clsx(style.modalContent)}>
+        <div
+            className={clsx(style.modal)}
+            onClick={closeBody}
+        >
+            <div
+                className={clsx(style.modalContent)}
+                 onClick={event => event.stopPropagation()}
+            >
                 <button className={clsx(style.modalCloseButton)}>
-                    <IconClose/>
-                    {children}
+                    {closeIcon}
                 </button>
+                {children}
             </div>
         </div>,
         document.getElementById('modal-root')
