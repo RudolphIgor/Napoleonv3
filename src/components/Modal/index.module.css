@@ -9,19 +9,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /*transform: scale(1)*/
+
 
 }
 
-.modal.active {
-    transform: scale(1);
-}
+
 
 .modalContent {
     padding: clamp(10px, 2.2vw, 20px);
     background-color: #303030;
     width: 672px;
     position: relative;
+    transform: translateY(-50px);
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .modalCloseButton {
@@ -31,4 +31,28 @@
     width: 15px;
     height: 21px;
     background: none;
+}
+
+/* open */
+
+.modal--entering,
+.modal--entered {
+    opacity: 1;
+}
+
+.modal--entering .modalContent,
+.modal--entered .modalContent {
+    transform: translateY(0);
+}
+
+/* close */
+
+.modal--exiting,
+.modal--exited {
+    opacity: 0;
+}
+
+.modal--exiting .modalContent,
+.modal--exited .modalContent {
+    transform: translateY(-50px);
 }

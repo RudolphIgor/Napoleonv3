@@ -12,25 +12,26 @@ const Index = (props) => {
     console.log(`isOpen: ${isOpen}`);
 
     return (
-        <div style={styleblock}>
-            <div className={style.content}>
-                <p className={style.title}>
-                    {props.slideArray.text}
-                </p>
-                <button className={style.button} onClick={() => setIsOpen(true)}>
-                    {props.slideArray.text_btn}
-                </button>
-                {isOpen && (
-                    <Modal
-                        closeIcon={<IconClose onClick={() => setIsOpen(false)}/>}
-                        closeBody={() => setIsOpen(false)}
-
-                    >
-                        <p>Some Text</p>
-                    </Modal>
-                )}
+        <>
+            <div style={styleblock}>
+                <div className={style.content}>
+                    <p className={style.title}>
+                        {props.slideArray.text}
+                    </p>
+                    <button className={style.button} onClick={() => setIsOpen(true)}>
+                        {props.slideArray.text_btn}
+                    </button>
+                </div>
             </div>
-        </div>
+
+            {/*----------Конец основного блока, дальше идет модальное окно------------*/}
+            <Modal
+                isOpen={isOpen} //передача состояния окна
+                onClose={() => setIsOpen(false)} //"обратная" функция вызываемая по onClose из компонента, но срабатывающая здесь
+            >
+                <p>Some Text</p>
+            </Modal>
+        </>
     );
 };
 
