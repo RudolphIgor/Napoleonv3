@@ -20,8 +20,8 @@
     background-color: #303030;
     width: 672px;
     position: relative;
-    transform: translateY(-50px);
-    transition: opacity 0.3s, transform 0.3s;
+    /*transform: translateY(-150px);*/
+    transition: transform 0.5s;
 }
 
 .modalCloseButton {
@@ -37,7 +37,7 @@
 
 .modal--entering,
 .modal--entered {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 .modal--entering .modalContent,
@@ -49,7 +49,7 @@
 
 .modal--exiting,
 .modal--exited {
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .modal--exiting .modalContent,

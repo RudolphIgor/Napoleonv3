@@ -10,15 +10,21 @@ import {Transition} from "react-transition-group";
 const Index = ({children, isOpen, onClose}) => {
     return ReactDOM.createPortal(
         <>
-            <Transition in={isOpen} timeout={350} unmountOnExit={true}>
+            <Transition in={isOpen} timeout={
+                {
+                    enter: 300,
+                    exit: 300,
+                }
+
+            } unmountOnExit={true}>
             {(state) => (
                 <div
                     className={clsx(`modal` , `modal--${state}`)}
-                    onClick={onClose}
+                    onClick={onClose} //при событии onClick происходит вызов функции в родительском элементе, меняющий состояние окна isOpen
                 >
                     <div
                         className={clsx(`modalContent`)}
-                        onClick={event => event.stopPropagation()}
+                        onClick={event => event.stopPropagation()} //установлен для предотвращения закрытия модального окна по щелчку на его контентную часть.
                     >
                         <button className={clsx(`modalCloseButton`)}
                         onClick={onClose}>
