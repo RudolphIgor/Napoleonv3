@@ -3,12 +3,16 @@ import style from './index.module.css'
 import {ReactComponent as IconClose} from "../../img/iconClose.svg";
 import Modal from "../Modal";
 import clsx from "clsx";
+import {sendBot} from "../../api/bot";
+
+
 
 const Index = (props) => {
     const styleblock = {
         background: `url(${props.slideArray.img}) center no-repeat`,
         height: "clamp(141px, 41.5vw, 498px)",
     }
+
     const [isOpen, setIsOpen] = useState(false);
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -52,7 +56,12 @@ const Index = (props) => {
                             </div>
                         </div>
                         <div>
-                            <button className={clsx(style.formButton)} type="submit">Отправить</button>
+
+                            <button className={clsx(style.formButton)} onClick={(event)=> {
+                                sendBot(event, name, phoneNumber)
+                                setIsOpen(false);
+                            }}
+                                type="submit">Отправить</button>
                         </div>
                         <div className={clsx(style.formSendResult)}>Ваш запрос успешно отправлен</div>
                     </form>
