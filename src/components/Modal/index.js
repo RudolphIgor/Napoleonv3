@@ -15,7 +15,6 @@ const Index = ({children, isOpen, onClose}) => {
                     enter: 300,
                     exit: 300,
                 }
-
             } unmountOnExit={true}>
             {(state) => (
                 <div
