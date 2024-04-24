@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import style from './index.module.css'
-import {ReactComponent as IconClose} from "../../img/iconClose.svg";
 import Modal from "../Modal";
 import clsx from "clsx";
 import {sendBot} from "../../api/bot";
@@ -11,7 +10,7 @@ const Index = (props) => {
         background: `url(${props.slideArray.img}) center no-repeat`,
         height: "clamp(141px, 41.5vw, 498px)",
     }
-
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
     const [isOpen, setIsOpen] = useState(false);
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -58,13 +57,22 @@ const Index = (props) => {
                         </div>
                         <div>
 
-                            <button className={clsx(style.formButton)} onClick={(event) => {
-                                   setSendResult(sendBot(event, name, phoneNumber))
+                            <button className={clsx(style.formButton)}
+                                    onClick={(event) => {
+                                        if (setSendResult(sendBot(event, name, phoneNumber))) {
+                                            setSendResult(true)
 
-
-
-                                // setIsOpen(false);
-                            }}
+                                        }
+                                        setTimeout(() => {
+                                            setIsOpen(false);
+                                        }, 1000)
+                                        // (async () => {
+                                        //     // Задержка в 2 секунды перед выводом сообщения
+                                        //     await sleep(2000);
+                                        //     console.log('Проснулись! Больше ждать не нужно.');
+                                        // })();
+                                        // setIsOpen(false);
+                                    }}
                                     type="submit">Отправить
                             </button>
                         </div>
