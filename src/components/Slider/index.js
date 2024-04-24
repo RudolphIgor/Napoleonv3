@@ -6,7 +6,6 @@ import clsx from "clsx";
 import {sendBot} from "../../api/bot";
 
 
-
 const Index = (props) => {
     const styleblock = {
         background: `url(${props.slideArray.img}) center no-repeat`,
@@ -16,6 +15,7 @@ const Index = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [sendResult, setSendResult] = useState(false);
     isOpen ? document.querySelector('body').classList.add('lock') : document.querySelector('body').classList.remove('lock');
     return (
         <>
@@ -33,7 +33,8 @@ const Index = (props) => {
             {/*----------Конец основного блока, дальше идет модальное окно------------*/}
             <Modal
                 isOpen={isOpen} //передача состояния окна
-                onClose={() => setIsOpen(false)} //"обратная" функция вызываемая по onClose из компонента, но срабатывающая здесь
+                onClose={() => setIsOpen(false)}
+                sendResult={sendResult}//"обратная" функция вызываемая по onClose из компонента, но срабатывающая здесь
             >
                 <div className={clsx(style.form)}>
                     <h3 className={clsx(style.formTitle)}>
@@ -57,13 +58,22 @@ const Index = (props) => {
                         </div>
                         <div>
 
-                            <button className={clsx(style.formButton)} onClick={(event)=> {
-                                sendBot(event, name, phoneNumber)
-                                setIsOpen(false);
+                            <button className={clsx(style.formButton)} onClick={(event) => {
+                                   setSendResult(sendBot(event, name, phoneNumber))
+
+
+
+                                // setIsOpen(false);
                             }}
-                                type="submit">Отправить</button>
+                                    type="submit">Отправить
+                            </button>
                         </div>
-                        <div className={clsx(style.formSendResult)}>Ваш запрос успешно отправлен</div>
+                        {sendResult &&
+                            (
+                                <div className={clsx(style.formSendResult)}>Ваш запрос успешно отправлен</div>
+                            )
+                        }
+
                     </form>
 
                 </div>
