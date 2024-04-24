@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import style from './index.module.css'
 import {ReactComponent as IconClose} from "../../img/iconClose.svg";
 import Modal from "../Modal";
+import clsx from "clsx";
 
 const Index = (props) => {
     const styleblock = {
@@ -9,7 +10,8 @@ const Index = (props) => {
         height: "clamp(141px, 41.5vw, 498px)",
     }
     const [isOpen, setIsOpen] = useState(false);
-    console.log(`isOpen: ${isOpen}`);
+    const [name, setName] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
 
     return (
         <>
@@ -24,12 +26,38 @@ const Index = (props) => {
                 </div>
             </div>
 
-            ----------Конец основного блока, дальше идет модальное окно------------
+            {/*----------Конец основного блока, дальше идет модальное окно------------*/}
             <Modal
                 isOpen={isOpen} //передача состояния окна
                 onClose={() => setIsOpen(false)} //"обратная" функция вызываемая по onClose из компонента, но срабатывающая здесь
             >
-                <p>Some Text</p>
+                <div className={clsx(style.form)}>
+                    <h3 className={clsx(style.formTitle)}>
+                        Заказать звонок
+                    </h3>
+                    <form>
+                        <div className={clsx(style.formBlock)}>
+                            <div className={clsx(style.inputBlock)}>
+                                <label className={clsx(style.labels)} htmlFor="name">Имя</label>
+                                <input className={clsx(style.inputs)}
+                                       type="text"
+                                       value={name} onChange={(e) => setName(e.target.value)}
+                                       autoFocus={true}
+                                />
+                            </div>
+                            <div className={clsx(style.inputBlock)}>
+                                <label className={clsx(style.labels)} htmlFor="phone">Телефон</label>
+                                <input className={clsx(style.inputs)} type="tel" value={phoneNumber}
+                                       onChange={(e) => setPhoneNumber(e.target.value)}/>
+                            </div>
+                        </div>
+                        <div>
+                            <button className={clsx(style.formButton)} type="submit">Отправить</button>
+                        </div>
+                        <div>Успешно</div>
+                    </form>
+
+                </div>
             </Modal>
         </>
     );

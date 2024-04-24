@@ -15,8 +15,8 @@ const Index = ({children, isOpen, onClose}) => {
                     enter: 300,
                     exit: 300,
                 }
-            } unmountOnExit={true}>
-            {(state) => (
+            } unmountOnExit={true}>{/*Библиотека позволяющая анимировать все внутреннее.*/}
+                {(state) => (
                 <div
                     className={clsx(`modal` , `modal--${state}`)}
                     onClick={onClose} //при событии onClick происходит вызов функции в родительском элементе, меняющий состояние окна isOpen

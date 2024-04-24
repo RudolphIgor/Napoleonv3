@@ -51,6 +51,11 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.button:hover {
+    background: #fff;
+    color: #E30016;
+}
+
 @media (max-width: 1200px) {
     .title {
         font-size: clamp(15px, 4vw, 48px);
@@ -61,3 +66,56 @@
     }
 
 }
+
+/*Для формы отправки*/
+.formTitle {
+    margin: 0 0 40px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.form {
+    color: #fff;
+    font-family: Ubuntu, "sans-serif";
+    text-align: center;
+    margin: 0 auto ;
+    width: 300px;
+}
+.formBlock {
+    margin: 0 0 40px 0;
+}
+.inputBlock {
+    display: grid;
+
+    width: 100%;
+}
+.inputBlock:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+.labels {
+    font-size: 20px;
+    margin: 0 0 6px 0;
+}
+.inputs {
+    max-width: 300px;
+    margin: 0 auto 0 auto;
+    padding: 5px 10px;
+    background: none;
+    border: 2px solid #4D4D4D;
+    color: #fff;
+    width: 100%;
+}
+
+.formButton {
+    padding: 11px 106px;
+    background: #E30016;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.formButton:hover {
+    background: #fff;
+    color: #E30016;
+}
+
