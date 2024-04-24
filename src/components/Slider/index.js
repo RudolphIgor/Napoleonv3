@@ -12,7 +12,7 @@ const Index = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
-
+    isOpen ? document.querySelector('body').classList.add('lock') : document.querySelector('body').classList.remove('lock');
     return (
         <>
             <div style={styleblock}>
