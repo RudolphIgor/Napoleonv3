@@ -54,7 +54,7 @@ const Index = (props) => {
                         <div>
                             <button className={clsx(style.formButton)} type="submit">Отправить</button>
                         </div>
-                        <div>Успешно</div>
+                        <div className={clsx(style.formSendResult)}>Ваш запрос успешно отправлен</div>
                     </form>
 
                 </div>
