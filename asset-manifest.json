@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Napoleonv3/static/css/main.32b2d757.css",
+    "main.js": "/Napoleonv3/static/js/main.ab5d2372.js",
+    "static/media/Ubuntu-Light.ttf": "/Napoleonv3/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
+    "static/media/Inter-SemiBold.ttf": "/Napoleonv3/static/media/Inter-SemiBold.6058d3da655fb35169c2.ttf",
+    "static/media/Ubuntu-Regular.ttf": "/Napoleonv3/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Medium.ttf": "/Napoleonv3/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/Napoleonv3/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/Montserrat-Bold.ttf": "/Napoleonv3/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
+    "static/media/Montserrat-Medium.ttf": "/Napoleonv3/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
+    "static/media/Montserrat-Regular.ttf": "/Napoleonv3/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/SofiaSans-Medium.ttf": "/Napoleonv3/static/media/SofiaSans-Medium.8f6b24f3c15f7a94d2ba.ttf",
+    "static/media/SofiaSans-Bold.ttf": "/Napoleonv3/static/media/SofiaSans-Bold.7880296ebde67695e3ad.ttf",
+    "static/media/SofiaSans-Regular.ttf": "/Napoleonv3/static/media/SofiaSans-Regular.6d587c9940f9a914bb10.ttf",
+    "static/media/logo.svg": "/Napoleonv3/static/media/logo.82e894311f04cf6e1f01148dfd85d3b4.svg",
+    "static/media/insta.svg": "/Napoleonv3/static/media/insta.561d4aea96899ecb73cb316759d1f1d3.svg",
+    "static/media/whatsup.svg": "/Napoleonv3/static/media/whatsup.8caeacb2d2fb771775956c63a9fc971c.svg",
+    "index.html": "/Napoleonv3/index.html",
+    "static/media/telegram.svg": "/Napoleonv3/static/media/telegram.ae469b47b72715b627cbfe63d08f8d76.svg",
+    "static/media/iconClose.svg": "/Napoleonv3/static/media/iconClose.eb4c7782b891c3a14240a32b3e0ba4c3.svg",
+    "main.32b2d757.css.map": "/Napoleonv3/static/css/main.32b2d757.css.map",
+    "main.ab5d2372.js.map": "/Napoleonv3/static/js/main.ab5d2372.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32b2d757.css",
+    "static/js/main.ab5d2372.js"
+  ]
+}
