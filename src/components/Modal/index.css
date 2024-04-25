@@ -53,3 +53,9 @@
 .modal--exited .modalContent {
     transform: scale(0);
 }
+
+@media (max-width: 750px) {
+    .modalContent{
+        width: 89.6%;
+    }
+}

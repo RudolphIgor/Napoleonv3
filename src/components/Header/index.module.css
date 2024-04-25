@@ -1,11 +1,9 @@
 header {
     margin: 20px 0 35px 0;
+    padding: clamp(10px, 1.6666666667vw, 20px) 0 ;
 }
 
-.test {
-    max-width: 1300px;
-    margin: 0 auto;
-}
+
 
 .header__container {
     text-align: center;
@@ -16,18 +14,6 @@ header {
     width: min(96%, 1200px);
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 20px 0 0 0;
-}
-
-
-
-
-.socialWrapper {
-    border: 1px solid red;
-    display: grid;
-    align-self: center;
-    text-align: start;
-    width: min(9.6666666667vw, 116px);
 }
 
 .contacts {
@@ -54,14 +40,13 @@ nav {
     grid-column: 1 / 5;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 3px;
+    /*padding-bottom: 3px;*/
 }
 
 .nav__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 43px;
-    padding-bottom: 5px;
 }
 
 .nav__item {
